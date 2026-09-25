@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конструктор открытки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+    <h1>Конструктор открытки</h1>
+
+    <div class="section">
+      <h3>Выберите стиль:</h3>
+
+      <button class="style-btn active" data-style="light">Светлая</button>
+      <button class="style-btn" data-style="dark">Тёмная</button>
+      <button class="style-btn" data-style="party">Праздничная</button>
+    </div>
+
+    <div class="section">
+      <h3>Выберите эмодзи:</h3>
+
+      <button class="emoji-btn active" data-emoji="🎉">🎉</button>
+      <button class="emoji-btn" data-emoji="❤️">❤️</button>
+      <button class="emoji-btn" data-emoji="⭐">⭐</button>
+    </div>
+
+    <form class="card-form">
+      <input class="name-input" type="text" placeholder="Кому открытка?">
+
+      <input class="text-input" type="text" placeholder="Текст поздравления">
+
+      <button type="submit">Создать открытку</button>
+    </form>
+
+    <p class="message"></p>
+
+    <div class="card-preview">
+      <div class="card-emoji">🎉</div>
+
+      <p>Для: <span class="card-name">...</span></p>
+
+      <p class="card-text">Текст поздравления появится здесь</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
